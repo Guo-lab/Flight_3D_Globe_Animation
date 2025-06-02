@@ -29,7 +29,7 @@
         "country": "USA"
       },
       "date": "2024-12-21",
-      "vehicle": "plane"
+      "vehicle": "ship"
     },
     {
       "source": {
@@ -55,12 +55,60 @@
         "country": "UK"
       },
       "target": {
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "city": "Paris",
-        "country": "France"
+        "lat": 55.7558,
+        "lng": 37.6151,
+        "city": "Moscow",
+        "country": "Russia"
       },
-      "date": "2025-02-20",
-      "vehicle": "ship"
+      "date": "2025-02-05",
+      "vehicle": "train"
+    },
+    {
+      "source": {
+        "lat": 55.7558,
+        "lng": 37.6151,
+        "city": "Moscow",
+        "country": "Russia"
+      },
+      "target": {
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "city": "Shanghai",
+        "country": "China"
+      },
+      "date": "2025-03-01",
+      "vehicle": "car"
+    },
+    {
+      "source": {
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "city": "Shanghai",
+        "country": "China"
+      },
+      "target": {
+        "lat": 28.6139,
+        "lng": 77.209,
+        "city": "New Delhi",
+        "country": "India"
+      },
+      "date": "2025-04-10",
+      "vehicle": "plane"
+    },
+    {
+      "source": {
+        "lat": 28.6139,
+        "lng": 77.209,
+        "city": "New Delhi",
+        "country": "India"
+      },
+      "target": {
+        "lat": -23.5505,
+        "lng": -46.6333,
+        "city": "São Paulo",
+        "country": "Brazil"
+      },
+      "date": "2025-05-20",
+      "vehicle": "plane"
     }
 ]

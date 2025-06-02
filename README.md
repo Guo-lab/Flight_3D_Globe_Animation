@@ -20,7 +20,7 @@ To implement a 3D globe animation with flight paths, with the similar functional
 ```
 
 
-Unfortunately, there is still a bug that the second flight path is not displayed correctly. According to the output log, the frame data is correct. However, after the first flight path is shown, the second one does not appear as expected.
+Unfortunately, there is still a bug that I have not been able to show the flight path accumulation correctly in the 3D plot. See in `TODO`
 
 Work in progress, but the basic functionality is there. The code uses `Plotly` for 3D plotting and 3D projections.
 

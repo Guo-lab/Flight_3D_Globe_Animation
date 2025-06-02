@@ -238,7 +238,7 @@ frame_within_flight={frame_within_flight}"
                     partial_lats,
                     partial_lons,
                     current_path["vehicle"],
-                    width=4,
+                    width=7,
                     flight_idx=current_flight_idx,
                 )
                 frame_data.append(path_trace)
@@ -363,7 +363,11 @@ frame_within_flight={frame_within_flight}"
             #         print(each_data["text"], "with ", len(each_data["lat"]), "points.")
             pass
 
-        fig = go.Figure(data=frames[0].data, frames=frames)
+        # TODO: Normally the data should be set as initial data,
+        # but Plotly seems not support this for different traces.
+        # The temporary solution is to show all flights at first and
+        # present the animation one by one.
+        fig = go.Figure(data=frames[-1].data, frames=frames, skip_invalid=False)
         # self.geo_layout["projection_rotation"]= {"lon": mid_lon, "lat": mid_lat}
 
         fig.update_layout(
