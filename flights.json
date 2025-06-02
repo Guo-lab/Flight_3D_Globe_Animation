@@ -1,0 +1,66 @@
+[
+    {
+      "source": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "city": "New York",
+        "country": "USA"
+      },
+      "target": {
+        "lat": 35.6895,
+        "lng": 139.6917,
+        "city": "Tokyo",
+        "country": "Japan"
+      },
+      "date": "2024-10-10",
+      "vehicle": "plane"
+    },
+    {
+      "source": {
+        "lat": 35.6895,
+        "lng": 139.6917,
+        "city": "Tokyo",
+        "country": "Japan"
+      },
+      "target": {
+        "lat": 37.7749,
+        "lng": -122.4194,
+        "city": "San Francisco",
+        "country": "USA"
+      },
+      "date": "2024-12-21",
+      "vehicle": "plane"
+    },
+    {
+      "source": {
+        "lat": 37.7749,
+        "lng": -122.4194,
+        "city": "San Francisco",
+        "country": "USA"
+      },
+      "target": {
+        "lat": 51.5074,
+        "lng": -0.1278,
+        "city": "London",
+        "country": "UK"
+      },
+      "date": "2025-01-15",
+      "vehicle": "plane"
+    },
+    {
+      "source": {
+        "lat": 51.5074,
+        "lng": -0.1278,
+        "city": "London",
+        "country": "UK"
+      },
+      "target": {
+        "lat": 48.8566,
+        "lng": 2.3522,
+        "city": "Paris",
+        "country": "France"
+      },
+      "date": "2025-02-20",
+      "vehicle": "ship"
+    }
+]
