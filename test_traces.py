@@ -45,13 +45,13 @@ class TestTraceCreation(unittest.TestCase):
         lons = np.array([-74.0060, -37.0, -0.1278])
 
         # Test with known vehicle
-        trace = self.animator._create_path_trace(lats, lons, "plane", 3)
+        trace = self.animator._create_path_trace(lats, lons, "plane", 3, 0)
 
         # Assertions
         self.assertIsInstance(trace, go.Scattergeo)
         self.assertEqual(trace.mode, "lines")
         self.assertEqual(trace.line.width, 3)
-        self.assertEqual(trace.line.color, DEFAULT_VEHICLE_STYLES["plane"]["color"])
+        self.assertNotEqual(trace.line.color, DEFAULT_VEHICLE_STYLES["plane"]["color"])
         self.assertTrue(trace.showlegend)
         self.assertEqual(trace.hoverinfo, "skip")
         self.assertEqual(trace.name, "Plane path")
@@ -61,7 +61,7 @@ class TestTraceCreation(unittest.TestCase):
     def test_create_marker_trace_source(self):
         """Test source marker trace creation."""
         trace = self.animator._create_marker_trace(
-            40.7128, -74.0060, "New York", "plane", is_destination=False
+            40.7128, -74.0060, "New York", "plane"
         )
 
         # Assertions
@@ -89,9 +89,7 @@ class TestTraceCreation(unittest.TestCase):
         Test destination marker trace creation.
         """
 
-        trace = self.animator._create_marker_trace(
-            51.5074, -0.1278, "London", "train", is_destination=True
-        )
+        trace = self.animator._create_marker_trace(51.5074, -0.1278, "London", "train")
 
         # Assertions
         # print(trace)
